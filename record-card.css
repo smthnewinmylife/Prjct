@@ -1,0 +1,44 @@
+.record-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden; 
+    text-align: center;
+    padding: 15px;
+}
+
+.record-card img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.record-card h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.record-card p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.record-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.record-card button:hover {
+    background-color: #45a049;
+}

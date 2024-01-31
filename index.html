@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пошук Вінілових Платівок</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="search-form.css">
+    <link rel="stylesheet" href="record-card.css">
+    <link rel="stylesheet" href="pagination.css">
+</head>
+<body>
+
+    <header>
+        <button onclick="history.back()">Назад</button>
+        <div class="header-logo">For Projector ❤️</div>
+    </header>
+
+    <main>
+        <section class="search-form">
+            <input type="text" id="artist" name="artist" placeholder="Артист" maxlength="100">
+            <select id="genre" name="genre">
+                <option value="rock">Рок</option>
+                <option value="jazz">Джаз</option>
+                <option value="blues">Блюз</option>
+                <option value="pop">Поп</option>
+                <option value="hip-hop">Хіп-хоп</option>
+                <option value="electronic">Електроніка</option>
+                <option value="folk">Фолк</option>
+                <option value="classical">Класика</option>
+                <option value="reggae">Реггі</option>
+                <option value="country">Кантрі</option>
+            </select>
+            
+            <select id="decade" name="decade">
+                <option value="1950-60">1950-60 рр.</option>
+                <option value="1960-70">1960-70 рр.</option>
+                <option value="1970-80">1970-80 рр.</option>
+                <option value="1980-90">1980-90 рр.</option>
+                <option value="1990-00">1990-00 рр.</option>
+                <option value="2000-10">2000-10 рр.</option>
+                <option value="2010-20">2010-20 рр.</option>
+                <option value="2020-30">2020-30 рр.</option>
+            </select>
+            
+            <select id="country" name="country">
+                <option value="usa">США</option>
+                <option value="uk">Велика Британія</option>
+                <option value="france">Франція</option>
+                <option value="germany">Німеччина</option>
+                <option value="italy">Італія</option>
+                <option value="japan">Японія</option>
+                <option value="canada">Канада</option>
+                <option value="australia">Австралія</option>
+                <option value="brazil">Бразилія</option>
+                <option value="sweden">Швеція</option>
+            </select>
+            
+            <button type="submit">Пошук</button>
+        </section>
+
+        <section class="records">
+            <div class="record-card">
+                <img src="./1.jpg" alt="Обложка альбому 1">
+                <h3>Love Love</h3>
+                <p>Queen 2</p>
+                <button type="button" onclick="addToCollection('Album1')">Додати в колекцію</button>
+            </div>
+
+            <div class="record-card">
+                <img src="./2.jpg" alt="Обложка альбому 2">
+                <h3>Rocket to Ukraine</h3>
+                <p>RAMONES</p>
+                <button type="button" onclick="addToCollection('Album2')">Додати в колекцію</button>
+            </div>
+            <div class="record-card">
+                <img src="./3.jpg" alt="Обложка альбому 3">
+                <h3>HIGHWAY TO HELL</h3>
+                <p>AC DC</p>
+                <button type="button" onclick="addToCollection('Album3')">Додати в колекцію</button>
+            </div>  
+                        
+        </section>
+
+        <nav class="pagination">
+            <a href="?page=1">&laquo;</a>
+            <a href="?page=1">1</a>
+            <a href="?page=2">2</a>
+            <a href="?page=3">3</a>
+            <a href="?page=4">4</a>
+            <a href="?page=5">5</a>
+            <a href="?page=6">6</a>
+            <a href="?page=2">&raquo;</a>
+        </nav>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
